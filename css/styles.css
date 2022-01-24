@@ -1,0 +1,121 @@
+:root {
+    --main-bg-color: hsl(185, 75%, 39%);
+    --card-bg-color:white;
+    --text-color: hsl(229, 23%, 23%);
+    --line-color: hsl(240, 57%, 91%);
+    --stats-color: hsl(0, 0%, 59%);
+}
+
+body {
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 35vw bottom 50vh, left 30vw top 50vh;
+    background-color: rgb(161, 153, 199);
+    font-family: 'Kumbh Sans', sans-serif;
+    overflow: hidden;
+}
+h2{
+    margin: 30px 0px 0px 0px;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: var(--card-bg-color);
+    width: 330px;
+    height: 460px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    overflow: hidden;
+}
+.card-rec {
+    display: flex;
+    background-color: var(--card-bg-color);
+    width: 330px;
+    height: 260px;
+    flex-direction: row;
+}
+.card__header {
+    background-image: url('/images/bg-pattern-card.svg');
+    height: 130px;
+    position: relative;
+}
+
+.card__img {
+    margin: 0px 0px 0px 0px;
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    border: 5px solid var(--card-bg-color);
+    background-color: var(--card-bg-color);
+}
+.card__img2 {
+    border-radius: 50%;
+    margin: 50px 0px 0px 100px;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    bottom: -50;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    background-color: var(--card-bg-color);
+}
+
+.card__body {
+    margin: -10px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.card__text {
+    margin: -100px 0px 0px 0px;
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.card__text--name {
+    margin: 200px 0px 0px 0px;
+    font-weight: 500;
+    position: center;
+    color: var(--text-color);
+    padding: 30px 0px 0px 0px;
+}
+
+.footer {
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    height: 30px;
+    margin-top: 1rem;
+    padding: 0 0;
+    width: 100%;
+}
+
+.attribution { 
+    font-size: 10px; 
+    text-align: center; 
+    color: var(--text-color);
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+    }
+}
